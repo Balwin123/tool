@@ -1,0 +1,93 @@
+body{
+    background: #079992;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    position: absolute;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    background: #000;
+    text-align: center;
+    transition: 0.800s ease;
+}
+.navbar > .side-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-item{
+    display: flex;
+}
+.nav-item > .nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 1em;
+    flex: 1;
+}
+.nav-item > .nav-link:hover{
+    background: #b71540;
+    color: #fff;
+}
+.toggle-collapse{
+    float: left;
+    margin-left: -3.3em;
+    margin-top: .5em;
+    content: '';
+    outline: inherit;
+    border: 0;
+    background: transparent;
+}
+/* tggle-icono */
+
+.toggle-icon,
+.toggle-icon::before,
+.toggle-icon::after{
+    content: '';
+    width: 30px;
+    height: 3px;
+    position: fixed;
+    background: #000;
+    border-radius: 2em;
+    border: 1px solid #000;
+    margin-top: 0.8em;
+    transition: 0.800s ease;
+}
+.toggle-icon::before{
+    position: absolute;
+    left: -1px;
+    margin-top: -0.8em;
+}
+.toggle-icon::after{
+    position: absolute;
+    left: -1px;
+    margin-top: 0.6em;
+    width: 20px;
+
+}
+.toggle-icon{
+    width: 15px;
+}
+.show .toggle-icon::after{
+    width: 30px;
+}
+.show .toggle-icon{
+    width: 30px;
+}
+
+.nav-item > .site-name{
+    text-decoration: none;
+    padding: 1.3em;
+    font-size: 1em;
+    color: #fff;
+}
+.nav-item:last-child > .nav-link i{
+    padding: .5em;
+}
+.nav-item:hover:last-child > .nav-link i{
+    background: #fff;
+    color: #000;
+} 
