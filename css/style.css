@@ -1,5 +1,5 @@
 body{
-    background: #079992;
+    background: url(../assets/Clouds-Background-Hd\,-wallpaper-collections-at-graciaviva.cat.jpg);
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -40,6 +40,7 @@ body{
     outline: inherit;
     border: 0;
     background: transparent;
+    cursor: pointer;
 }
 /* tggle-icono */
 
